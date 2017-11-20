@@ -1,4 +1,4 @@
-package com.example.batrakov.simplesyncadapter;
+package com.example.batrakov.simplesyncadapter.syncAdapter;
 
 import android.app.Service;
 import android.content.Intent;

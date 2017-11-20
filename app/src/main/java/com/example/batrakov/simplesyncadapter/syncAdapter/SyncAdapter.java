@@ -1,4 +1,4 @@
-package com.example.batrakov.simplesyncadapter;
+package com.example.batrakov.simplesyncadapter.syncAdapter;
 
 import android.accounts.Account;
 import android.content.AbstractThreadedSyncAdapter;
@@ -14,12 +14,7 @@ import android.os.Bundle;
 
 public class SyncAdapter extends AbstractThreadedSyncAdapter {
 
-    ContentResolver mContentResolver;
-
-    public SyncAdapter(Context context, boolean autoInitialize, boolean allowParallelSyncs) {
-        super(context, autoInitialize, allowParallelSyncs);
-        mContentResolver = context.getContentResolver();
-    }
+    private ContentResolver mContentResolver;
 
     public SyncAdapter(Context context, boolean autoInitialize) {
         super(context, autoInitialize);
